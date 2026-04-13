@@ -7,3 +7,6 @@ jobs:
       - name: show the runner
         run: |
             echo "The runner that is executing this job is: ${{ runner.os }}"
+            echo "The runner that is executing this job is: ${{ runner.name }}"
+            echo "RUNNER OS: $RUNNER_OS"
+            echo "RUNNER NAME: $RUNNER_NAME"
