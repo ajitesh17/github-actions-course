@@ -1,7 +1,7 @@
 # name of the workflow
 name: 01 - Buidling Blocks
 # event that triggers the workflow
-on: push
+on: workflow_dispatch
 # jobs that will run as part of the workflow
 # each job will run on a separate runner and can have multiple steps
 # jobs are independent of each other and will run in parallel by default
