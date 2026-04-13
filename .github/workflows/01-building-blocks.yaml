@@ -11,8 +11,8 @@ jobs:
         steps:
             - name: Failed step
               run: |
-                echo "This step will fail"
-                exit 1
+                echo "This step will run"
+                exit 0
             - name: Say Goodbye
               run: echo "Goodbye World!"
 
