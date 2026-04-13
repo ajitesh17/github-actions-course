@@ -1,11 +1,21 @@
+# name of the workflow
 name: 01 - Buidling Blocks
+# event that triggers the workflow
 on: push
+# jobs that will run as part of the workflow
+# each job will run on a separate runner and can have multiple steps
+# jobs are independent of each other and will run in parallel by default
 jobs:
+    # name of the first job
     echo-hello:
+        # specifies the type of runner to use for this job
         runs-on: ubuntu-latest
+        # steps that will run as part of this job
         steps:
             - name: Say Hello
+            # the command to run in this step
               run: echo "Hello World!"
+    # name of the second job
     echo-goodbye:
         runs-on: ubuntu-latest
         steps:
